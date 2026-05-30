@@ -10,30 +10,30 @@
   <div class="main-container">
     <aside class="sidebar">
       <div class="profile">
-        <img src="./photo.jpeg" alt="Profile photo" />
-        <h2>Supriya Das</h2>
+        <img src="./photo.jpeg" alt="Profile photo of Supriya Das" />
+        <h1>Supriya Das</h1>
         <a href="./resume.pdf" class="download-resume" download>Download Resume</a>
       </div>
 
       <div class="contact">
         <div class="email">
-          <h3 class="label">Email</h3>
+          <h2 class="label">Email</h2>
           <a href="mailto:supriyadas.it.aec@gmail.com" class="value">supriyadas.it.aec@gmail.com</a>
         </div>
 
         <div class="phone">
-          <h3 class="label">Phone</h3>
+          <h2 class="label">Phone</h2>
           <a href="tel:+919564256492" class="value">+91 9564256492</a>
         </div>
 
         <div class="whatsapp">
-          <h3 class="label">WhatsApp</h3>
+          <h2 class="label">WhatsApp</h2>
           <a href="https://wa.me/919564256492" target="_blank" rel="noopener noreferrer" class="value">Chat on WhatsApp</a>
         </div>
 
         <div class="location">
-          <h3 class="label">Location</h3>
-          <p class="value">WEST BENGAL, INDIA</p>
+          <h2 class="label">Location</h2>
+          <p class="value">West Bengal, India</p>
         </div>
       </div>
 
@@ -61,9 +61,9 @@
     <main class="main-content">
       <div id="navigation">
         <div class="nav-top">
-          <h3 class="mobile-logo"></h3>
+          <h2 class="mobile-logo">Portfolio</h2>
 
-          <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu" aria-expanded="false">
+          <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu" aria-expanded="false" type="button">
             <span></span>
             <span></span>
             <span></span>
@@ -162,7 +162,7 @@
           <div class="tab-panel active-panel" id="projects-panel">
             <div class="project-container">
               <a href="https://your-project-link-1.com" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 1" />
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 1 preview" />
                 <div class="card">
                   <h3>Project One</h3>
                   <p>Write your project description here.</p>
@@ -171,7 +171,7 @@
               </a>
 
               <a href="https://your-project-link-2.com" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 2" />
+                <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 2 preview" />
                 <div class="card">
                   <h3>Project Two</h3>
                   <p>Write your project description here.</p>
@@ -180,7 +180,7 @@
               </a>
 
               <a href="https://your-project-link-3.com" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 3" />
+                <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 3 preview" />
                 <div class="card">
                   <h3>Project Three</h3>
                   <p>Write your project description here.</p>
@@ -189,7 +189,7 @@
               </a>
 
               <a href="https://your-project-link-4.com" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 4" />
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 4 preview" />
                 <div class="card">
                   <h3>Project Four</h3>
                   <p>Write your project description here.</p>
@@ -287,10 +287,20 @@
     const mobileLinks = document.querySelectorAll("#mobile-nav a");
     mobileLinks.forEach((link) => {
       link.addEventListener("click", () => {
+        if (window.innerWidth <= 768) {
+          mobileNav.classList.remove("show");
+          menuToggle.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
         mobileNav.classList.remove("show");
         menuToggle.classList.remove("open");
         menuToggle.setAttribute("aria-expanded", "false");
-      });
+      }
     });
   </script>
 </body>
