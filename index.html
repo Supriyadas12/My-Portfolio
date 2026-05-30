@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <div class="main-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="./rohit.png" alt="Profile photo" />
+        <h2>Rohit Negi</h2>
+        <p>Frontend Developer</p>
+      </div>
+
+      <div class="contact">
+        <div class="email">
+          <h3 class="label">Email</h3>
+          <a href="mailto:yourmail@example.com" class="value">yourmail@example.com</a>
+        </div>
+
+        <div class="phone">
+          <h3 class="label">Phone</h3>
+          <a href="tel:+911234567890" class="value">+91 12345 67890</a>
+        </div>
+
+        <div class="whatsapp">
+          <h3 class="label">WhatsApp</h3>
+          <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer" class="value">Chat on WhatsApp</a>
+        </div>
+
+        <div class="location">
+          <h3 class="label">Location</h3>
+          <p class="value">Dwarka, Delhi</p>
+        </div>
+      </div>
+
+      <div class="social">
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X Profile">
+          <img src="https://cdn.simpleicons.org/x/38bdf8" alt="X" />
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <img src="https://cdn.simpleicons.org/github/38bdf8" alt="GitHub" />
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <img src="https://cdn.simpleicons.org/linkedin/38bdf8" alt="LinkedIn" />
+        </a>
+        <a href="mailto:yourmail@example.com" aria-label="Email">
+          <img src="https://cdn.simpleicons.org/gmail/38bdf8" alt="Email" />
+        </a>
+        <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <img src="https://cdn.simpleicons.org/whatsapp/38bdf8" alt="WhatsApp" />
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div id="navigation">
+        <div class="nav-top">
+          <h3 class="mobile-logo">Portfolio</h3>
+
+          <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav id="mobile-nav">
+          <a href="#about" class="active">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#portfolio">Portfolio</a>
+        </nav>
+      </div>
+
+      <section id="about">
+        <h2 class="heading">About Me</h2>
+        <div class="line"></div>
+        <p class="content">
+          I am a creative and passionate Frontend Developer with a keen eye for detail and a love for building beautiful, functional, and user-friendly web experiences. My journey in web development is driven by a desire to turn complex problems into simple, elegant solutions. I specialize in modern web technologies and am always eager to learn and adapt to the ever-evolving digital landscape.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="line"></div>
+        <div class="grid-container">
+          <div class="item">
+            <img src="https://cdn.simpleicons.org/html5/38bdf8" alt="HTML5" />
+            <h3>HTML5</h3>
+          </div>
+          <div class="item">
+            <img src="https://cdn.simpleicons.org/css/38bdf8" alt="CSS3" />
+            <h3>CSS3</h3>
+          </div>
+          <div class="item">
+            <img src="https://cdn.simpleicons.org/javascript/38bdf8" alt="JavaScript" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="item">
+            <img src="https://cdn.simpleicons.org/react/38bdf8" alt="React" />
+            <h3>React</h3>
+          </div>
+          <div class="item">
+            <img src="https://cdn.simpleicons.org/git/38bdf8" alt="Git" />
+            <h3>Git & GitHub</h3>
+          </div>
+          <div class="item">
+            <img src="https://cdn.simpleicons.org/typescript/38bdf8" alt="TypeScript" />
+            <h3>TypeScript</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2 class="heading">Education</h2>
+        <div class="line"></div>
+        <div class="edtech">
+          <div class="edfirst">
+            <div class="year">2020-2022</div>
+            <h3 class="degree">Master of Technology in CSE</h3>
+            <p class="college">Indian Institute of Technology Guwahati</p>
+            <p class="work">
+              Focused on software development, algorithms, and web technologies. Completed a final year project on building a responsive e-commerce platform.
+            </p>
+            <div class="goal"></div>
+          </div>
+
+          <div class="edsecond">
+            <div class="year">2016-2020</div>
+            <h3 class="degree">Bachelor of Technology in CSE</h3>
+            <p class="college">GBPIET Ghurdauri</p>
+            <p class="work">
+              Focused on learning Algorithm, DBMS, Computer Network and Operating System. Cracked GATE CSE with AIR 202.
+            </p>
+            <div class="goal"></div>
+          </div>
+
+          <div class="liner"></div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="portfolio-top">
+          <div>
+            <h2 class="heading">Portfolio</h2>
+            <div class="line"></div>
+          </div>
+
+          <div class="portfolio-tabs">
+            <button class="tab-btn active-tab" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="certificates">Certificates</button>
+          </div>
+        </div>
+
+        <div class="tab-slider">
+          <div class="tab-panel active-panel" id="projects-panel">
+            <div class="project-container">
+              <a href="https://your-project-link-1.com" target="_blank" rel="noopener noreferrer" class="project">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 1" />
+                <div class="card">
+                  <h3>Project One</h3>
+                  <p>Write your project description here.</p>
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </a>
+
+              <a href="https://your-project-link-2.com" target="_blank" rel="noopener noreferrer" class="project">
+                <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 2" />
+                <div class="card">
+                  <h3>Project Two</h3>
+                  <p>Write your project description here.</p>
+                  <span>React</span><span>CSS</span>
+                </div>
+              </a>
+
+              <a href="https://your-project-link-3.com" target="_blank" rel="noopener noreferrer" class="project">
+                <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 3" />
+                <div class="card">
+                  <h3>Project Three</h3>
+                  <p>Write your project description here.</p>
+                  <span>Portfolio</span><span>UI</span>
+                </div>
+              </a>
+
+              <a href="https://your-project-link-4.com" target="_blank" rel="noopener noreferrer" class="project">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Project 4" />
+                <div class="card">
+                  <h3>Project Four</h3>
+                  <p>Write your project description here.</p>
+                  <span>Dashboard</span><span>UX</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="certificates-panel">
+            <div class="certificate-container">
+              <a href="https://your-certificate-link-1.com" target="_blank" rel="noopener noreferrer" class="certificate-card">
+                <h3>Certificate One</h3>
+                <p>Add certificate title and issuer here.</p>
+                <span>View Certificate</span>
+              </a>
+
+              <a href="https://your-certificate-link-2.com" target="_blank" rel="noopener noreferrer" class="certificate-card">
+                <h3>Certificate Two</h3>
+                <p>Add certificate title and issuer here.</p>
+                <span>View Certificate</span>
+              </a>
+
+              <a href="https://your-certificate-link-3.com" target="_blank" rel="noopener noreferrer" class="certificate-card">
+                <h3>Certificate Three</h3>
+                <p>Add certificate title and issuer here.</p>
+                <span>View Certificate</span>
+              </a>
+
+              <a href="https://your-certificate-link-4.com" target="_blank" rel="noopener noreferrer" class="certificate-card">
+                <h3>Certificate Four</h3>
+                <p>Add certificate title and issuer here.</p>
+                <span>View Certificate</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const projectsPanel = document.getElementById("projects-panel");
+    const certificatesPanel = document.getElementById("certificates-panel");
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        tabButtons.forEach((btn) => btn.classList.remove("active-tab"));
+        button.classList.add("active-tab");
+
+        if (button.dataset.tab === "projects") {
+          projectsPanel.classList.add("active-panel");
+          certificatesPanel.classList.remove("active-panel");
+          projectsPanel.style.animation = "slideInLeft 0.45s ease";
+        } else {
+          certificatesPanel.classList.add("active-panel");
+          projectsPanel.classList.remove("active-panel");
+          certificatesPanel.style.animation = "slideInRight 0.45s ease";
+        }
+      });
+    });
+
+    const sections = document.querySelectorAll("main section");
+    const navLinks = document.querySelectorAll("#mobile-nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 140;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+      menuToggle.classList.toggle("open");
+
+      const expanded = menuToggle.classList.contains("open");
+      menuToggle.setAttribute("aria-expanded", expanded);
+    });
+
+    const mobileLinks = document.querySelectorAll("#mobile-nav a");
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("show");
+        menuToggle.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>
